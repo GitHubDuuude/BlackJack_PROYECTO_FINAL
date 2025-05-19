@@ -28,15 +28,15 @@ public class MainPanel extends JPanel {
 
 	public void initComponents() {
 		rulesPanel = new RulesPanel();
-//		menuPanel = new MenuPanel(this);
+		// menuPanel = new MenuPanel(this);
 		gamePanel = new GamePanel(this);
-//		loginPanel = new LoginPanel(this);
+		// loginPanel = new LoginPanel(this);
 		closePanel = new ClosePanel(this);
 
 		setGameBackground(true);
-//		add(menuPanel, "menu");
+		// add(menuPanel, "menu");
 		add(gamePanel, "game");
-//		add(loginPanel, "login");
+		// add(loginPanel, "login");
 		setOpaque(false);
 	}
 
@@ -58,9 +58,9 @@ public class MainPanel extends JPanel {
 		closePanel.showPopUp(true);
 	}
 
-//	public void openRulesPopup() {
-//		rulesPanel.showPopUp(true);
-//	}
+	public void openRulesPopup() {
+		rulesPanel.showPopUp(true);
+	}
 
 	@Override
 	protected void paintComponent(Graphics g) {
